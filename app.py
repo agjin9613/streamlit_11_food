@@ -4,7 +4,6 @@ from keras.models import load_model  # TensorFlow is required for Keras to work
 from PIL import Image, ImageOps  # Install pillow instead of PIL
 import numpy as np
 
-
 def main() :
     # 1. 이미지 파일을 업로드하면
     st.title('11개의 음식을 분류하는 앱')
@@ -60,9 +59,6 @@ def main() :
 
         # 유저한테 보여주도록 한다.
         st.info('이 음식은 ' + class_name[2:] + '입니다. 정확도는 ' + str( round(confidence_score*100))+ '% 입니다.')
-        
-
-    
 
 if __name__ == '__main__':
     main()
